@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Songs from '../Songs/Songs'
-import songsData from '../../testData/songsData';
+import songsData from '../../testData/songsData'
+import headphones from '../../assets/headphones_logo.png'
 import'./App.css'
 
 class App extends Component {
@@ -15,7 +16,10 @@ class App extends Component {
   render() {
     return (
       <main className='App'>
-        <h1>Beats4Devs</h1>
+        <div>
+          <h1>Beats4Devs</h1>
+          <img src={headphones} className='headphones-image' alt='headphones' />
+        </div>
         <Songs songs={this.state.songs} />
       </main>
     )
