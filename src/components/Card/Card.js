@@ -1,10 +1,14 @@
 import React from 'react'
+import heart from '../../assets/heart-icon.png'
 import './Card.css'
 
-const Card = ({ id, albumCover, album, releaseDate, artist, songTitle, genre }) => {
+const Card = ({ id, albumCover, album, releaseDate, artist, songTitle, genre, saveSongPlaylist }) => {
     return (
         <div className='card'>
             <img className='mini-album-cover' alt='album cover' src={albumCover}/>
+                <div className='heart-container'>
+                    <img onClick={() => saveSongPlaylist(id)}src={heart} alt='favorite icon' />
+                </div>
             <p className='album-card'>Album: {album}</p>
             <p className='release-date-card'>Release Date: {releaseDate}</p>
             <p className='artist-card'>Artist: {artist}</p>
