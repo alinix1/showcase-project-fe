@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import Songs from '../Songs/Songs'
 import songsData from '../../testData/songsData'
+import { getSongsData } from '../../apiCalls'
 import headphones from '../../assets/headphones_logo.png'
 import'./App.css'
+
 
 class App extends Component {
   constructor() {
@@ -12,7 +14,9 @@ class App extends Component {
       errorMessage: ""
     }
   }
-
+  componentDidMount() {
+    getSongsData(songsData)
+  }
   render() {
     return (
       <main className='App'>
