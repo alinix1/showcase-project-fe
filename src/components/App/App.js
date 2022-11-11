@@ -1,31 +1,40 @@
 import React, { Component } from 'react'
 import Songs from '../Songs/Songs'
-import songsData from '../../testData/songsData'
 import { getSongsData } from '../../apiCalls'
-import headphones from '../../assets/headphones_logo.png'
+import Header from '../Header/Header'
+import Sidebar from '../Sidebar/Sidebar'
 import'./App.css'
-
 
 class App extends Component {
   constructor() {
     super()
     this.state = {
-      songs: songsData,
+      songs: [],
       errorMessage: ""
     }
   }
+
   componentDidMount() {
-    getSongsData(songsData)
+    getSongsData(`/songs`)
+    .then((data) => this.setState({ songs: data }))
+    .catch((error) => {
+      this.setState({
+        ...this.state,
+        errorMessage: 'An error occurred, please try again.'
+      })
+    })
   }
+  
   render() {
     return (
-      <main className='App'>
-        <div>
-          <h1>Beats4Devs</h1>
-          <img src={headphones} className='headphones-image' alt='headphones' />
-        </div>
+    <div className="app-container">
+      <Header />
+      <main>
+        <section className="main-container">
         <Songs songs={this.state.songs} />
+        </section>
       </main>
+    </div> 
     )
   }
 }
