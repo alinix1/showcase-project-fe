@@ -1,4 +1,5 @@
 .card {
+    position: relative;
     box-shadow: 3px 5px 5px grey;
     background-image: linear-gradient(#DC3DEB, #9E2FD6, #7114F5);
     box-sizing: border-box;
@@ -24,4 +25,12 @@
     color: red;
     cursor: pointer;
   }
+
+.heart-container {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
   

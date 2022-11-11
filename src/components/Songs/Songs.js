@@ -2,7 +2,7 @@ import React from 'react'
 import './Songs.css'
 import Card from '../Card/Card'
 
-const Songs = ({ songs }) => {
+const Songs = ({ songs, saveSongPlaylist }) => {
     
     const songCards = songs.map(song => {
         return (
@@ -15,6 +15,7 @@ const Songs = ({ songs }) => {
                 songTitle={song.songTitle}
                 genre={song.genre}
                 key={song.id}
+                saveSongPlaylist={saveSongPlaylist}
             />
         )
     })
