@@ -11,3 +11,17 @@
     width: 200px;
     height: 200px;
 }
+
+.album-card,
+.release-date-card {
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0%
+}
+
+.song-card:hover {
+    color: red;
+    cursor: pointer;
+  }
+  

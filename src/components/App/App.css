@@ -2,11 +2,6 @@ body {
   background-color: black;
 }
 
-h1 {
-  color: white;
-  font-family: 'Roboto', sans-serif
-}
-
 .App {
   display: flex;
   flex-direction: column;
@@ -15,11 +10,11 @@ h1 {
   height: 100%;
 }
 
-.headphones-image {
+/* .headphones-image {
   display: flex;
   align-items: center;
   width: 50px;
   height: 50px;
   margin-left: 690px;
-}
+} */
 
