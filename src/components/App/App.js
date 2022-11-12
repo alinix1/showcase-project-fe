@@ -6,7 +6,6 @@ import Header from '../Header/Header'
 import Playlist from '../Playlist/Playlist'
 // import Sidebar from '../Sidebar/Sidebar'
 import'./App.css'
-import { setSelectionRange } from '@testing-library/user-event/dist/utils'
 
 class App extends Component {
   constructor() {
