@@ -13,4 +13,4 @@ const getSongsData = async (path) => {
     }
 }
 
-export { getSongsData }
+export default getSongsData

@@ -8,7 +8,7 @@ const Card = ({ id, albumCover, album, releaseDate, artist, songTitle, genre, sa
         <div className='card'>
             <img className='mini-album-cover' alt='album cover' src={albumCover}/>
                 <div className='heart-container'>
-                    <img onClick={() => saveSongPlaylist(id)}src={heart} alt='favorite icon' />
+                    <img onClick={() => saveSongPlaylist(id)}src={heart} alt='heart icon' />
                 </div>
             <p className='album-card'>Album: {album}</p>
             <p className='release-date-card'>Release Date: {releaseDate}</p>

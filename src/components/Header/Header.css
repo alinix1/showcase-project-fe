@@ -13,7 +13,8 @@ header {
     border-radius: 20px;
   }
 
-  .button-container  {
+  .playlist-button-container,
+  .home-button-container  {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -32,7 +33,8 @@ header {
     outline: none;
   }
 
-  .button-container:hover {
+  .playlist-button-container:hover,
+  .home-button-container:hover {
     box-shadow: inset 200px 0 0 0 #1594D6;
     cursor: pointer;
     color: black;
