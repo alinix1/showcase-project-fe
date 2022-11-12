@@ -3,7 +3,7 @@
     box-shadow: 3px 5px 5px grey;
     background-image: linear-gradient(#DC3DEB, #9E2FD6, #7114F5);
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 1.5rem;
     border: 3px solid black;
     padding: 10px;
 }
@@ -13,12 +13,32 @@
     height: 200px;
 }
 
+.mini-album-cover {
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
+
+.mini-album-cover:hover {
+    opacity: 0.5;
+}
+
 .album-card,
 .release-date-card {
     padding: 5px;
     font-size: 20px;
     font-weight: bold;
     margin: 0%
+}
+
+.artist-card,
+.song-card,
+.genre-card {
+    font-family: 'Sono', sans-serif;
+    font-weight: bold;
 }
 
 .song-card:hover {

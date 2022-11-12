@@ -8,7 +8,10 @@ const Header = () => {
             <h1>Beats4Devs</h1>
             <img src={headphones} alt='headphones logo' />
             <Link to='/playlist'>
-            <button className='button-container'>P L A Y L I S T</button>
+            <button className='playlist-button-container'>P L A Y L I S T</button>
+            </Link>
+            <Link to='/'>
+                <button className='home-button-container'>H O M E</button>
             </Link>
       </header>
     )

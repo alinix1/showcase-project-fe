@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Songs from '../Songs/Songs'
-import { getSongsData } from '../../apiCalls'
+import getSongsData from '../../apiCalls'
 import Header from '../Header/Header'
 import Playlist from '../Playlist/Playlist'
 // import Sidebar from '../Sidebar/Sidebar'

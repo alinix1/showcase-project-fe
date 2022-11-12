@@ -21,7 +21,7 @@ const Playlist = ({ favoriteSongs, saveSongPlaylist }) => {
     })
 
     if (!favoriteSongs.length) {
-        return <h2>Go add some of your fave songs!</h2>
+        return <h2 className='favorite-songs-message'>Go add some of your favorite songs!</h2>
     } else {
         return (
             <div className='songs-container'>
