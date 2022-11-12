@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Card from '../Card/Card'
 
 const Playlist = ({ favoriteSongs, saveSongPlaylist }) => {
@@ -32,4 +33,9 @@ const Playlist = ({ favoriteSongs, saveSongPlaylist }) => {
 }
 
 export default Playlist
+
+Playlist.propTypes = {
+    favoriteSongs: PropTypes.arrayOf(PropTypes.object),
+    saveSongPlaylist: PropTypes.func.isRequired
+}
 
