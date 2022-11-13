@@ -28,9 +28,11 @@
       </ul>
     </li>
     <li><a href="#setup">Setup</a></li>
+    <li><a href="#usage">Installation</a></li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#notes">Notes</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#roadmap">Acknowledgments</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -61,10 +63,26 @@ The project specs can be found [here](https://frontend.turing.edu/projects/modul
 
 <!-- SETUP -->
 ## Setup
-- Visit Deployed Site (https://showcase-project-fe.vercel.app/)
+- Visit [Deployed Site](https://showcase-project-fe.vercel.app/)
 - Link to [Back End](https://github.com/alinix1/showcase-project-api)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- INSTALLATION -->
+## Installation 
+
+1.  Clone down both repos, adding them to separate directories 
+`git clone git@github.com:alinix1/showcase-project-api.git`
+
+`git@github.com:alinix1/showcase-project-fe.git`
+
+2.  For front-end repository: Install NPM packages:
+`npm i` or `npm install` 
+`npm start`
+
+For API repository:  Install NPM packages:
+`npm install`
+`node server.js`
 
 <!-- USAGE -->
 ## Usage
@@ -102,6 +120,16 @@ I was responsible for applying previous concepts and leveraging past projects to
 - [ ] Refactor using Hooks 
 - [ ] Build functionality to allow a user to play the selected song
 
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments 
+
+Used the following resources during the project: 
+
+- ![MDN Web Docs][MDN-shield]
+- ![Stack Overflow][stack-overflow-shield] 
+- ![Turing][turing-shield]
+
+<!-- CONTACT -->
 ## Contact 
 
 Ali Nix | [![LinkedIn][linkedin-shield]][linkedin-url1]
@@ -120,4 +148,7 @@ Ali Nix | [![LinkedIn][linkedin-shield]][linkedin-url1]
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url1]: https://www.linkedin.com/in/ali-nix-38b9b9126/
+[turing-shield]: https://turing.edu/?ads_cmpid=1064466865&ads_adid=72751730870&ads_matchtype=b&ads_network=g&ads_creative=341753979066&utm_term=turing%20school&ads_targetid=kwd-307330888202&utm_campaign=&utm_source=adwords&utm_medium=ppc&ttv=2&gclid=Cj0KCQiAyMKbBhD1ARIsANs7rEHyZFP9Q4MTY1TMh4gsr49nBTFwyCrmEUtwwnHYpw_9krf7yiB_R1gaAiIfEALw_wcB
+[MDN-shield]: https://developer.mozilla.org/en-US/ 
+[stack-overflow-shield]: https://stackoverflow.com/
 
