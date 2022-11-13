@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import './Songs.css'
 import Card from '../Card/Card'
 
-const Songs = ({ songs, saveSongPlaylist }) => {
+const Songs = ({ songs, saveSongPlaylist, favoriteSongs, deleteSong }) => {
     const songCards = songs.map(song => {
         return (
             <Card 
@@ -15,6 +15,8 @@ const Songs = ({ songs, saveSongPlaylist }) => {
                 songTitle={song.songTitle}
                 genre={song.genre}
                 key={song.id}
+                favoriteSongs={favoriteSongs}
+                deleteSong={deleteSong}
                 saveSongPlaylist={saveSongPlaylist}
             />
         )

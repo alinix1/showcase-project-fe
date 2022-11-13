@@ -4,8 +4,9 @@ import Songs from '../Songs/Songs'
 import getSongsData from '../../apiCalls'
 import Header from '../Header/Header'
 import Playlist from '../Playlist/Playlist'
-// import Sidebar from '../Sidebar/Sidebar'
 import'./App.css'
+import { findAllByTestId } from '@testing-library/react'
+
 
 class App extends Component {
   constructor() {
@@ -28,11 +29,17 @@ class App extends Component {
     })
   }
 
-  saveSongPlaylist = (ID) => {
-    const favoriteSong = this.state.songs.find(song => song.id === ID)
+  saveSongPlaylist = (id) => {
+    const favoriteSong = this.state.songs.find(song => song.id === id)
     if (!this.state.favoriteSongs.includes(favoriteSong)) {
       this.setState({ favoriteSongs: [...this.state.favoriteSongs, favoriteSong] })
     }
+  }
+
+  deleteSong = (id) => {
+    const deleteFavoriteSong = this.state.favoriteSongs.filter(song => song.id !== id)
+    this.setState({ favoriteSongs: deleteFavoriteSong})
+   
   }
   
   render() {
@@ -41,13 +48,17 @@ class App extends Component {
       <main>
       <Header />
       <Switch>
-      <Route exact path='/' render={() => <Songs songs={this.state.songs} saveSongPlaylist={this.saveSongPlaylist} />} />
-      <Route exact path='/playlist' render={() => <Playlist favoriteSongs={this.state.favoriteSongs} saveSongPlaylist={this.saveSongPlaylist}/>}/>
+      <Route exact path='/' render={() => <Songs songs={this.state.songs} favoriteSongs={this.state.favoriteSongs} saveSongPlaylist={this.saveSongPlaylist} deleteSong={this.deleteSong}  />} />
+      <Route exact path='/playlist' render={() => <Playlist favoriteSongs={this.state.favoriteSongs} saveSongPlaylist={this.saveSongPlaylist} deleteSong={this.deleteSong} />}/>
+      <Route path='*'>
+            <h3>404: Sorry, that page doesn't exist.</h3>
+      </Route>
       </Switch>
       </main>
     </div> 
     )
   }
 }
+
 
 export default App;

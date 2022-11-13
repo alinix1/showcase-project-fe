@@ -1,5 +1,6 @@
 .card {
     position: relative;
+    color: black;
     box-shadow: 3px 5px 5px grey;
     background-image: linear-gradient(#DC3DEB, #9E2FD6, #7114F5);
     box-sizing: border-box;
