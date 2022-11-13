@@ -5,7 +5,7 @@ import getSongsData from '../../apiCalls'
 import Header from '../Header/Header'
 import Playlist from '../Playlist/Playlist'
 import'./App.css'
-import { findAllByTestId } from '@testing-library/react'
+
 
 
 class App extends Component {
@@ -20,7 +20,7 @@ class App extends Component {
 
   componentDidMount() {
     getSongsData(`/songs`)
-    .then((data) => this.setState({ songs: data }))
+    .then((data) => this.setState({ songs: data.songs }))
     .catch((error) => {
       this.setState({
         ...this.state,
