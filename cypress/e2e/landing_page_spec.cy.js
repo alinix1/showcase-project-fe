@@ -55,4 +55,17 @@ describe('Landing Page', () => {
           .first().click()
           .get('.songs-container > :nth-child(3)')
     })
+
+    it('should be able to hover over an album cover on a card', () => {
+        cy.get(':nth-child(1) > .mini-album-cover').trigger('mousedown')
+
+        cy.get(':nth-child(2) > .mini-album-cover').trigger('mousedown')
+
+        cy.get(':nth-child(3) > .mini-album-cover').trigger('mousedown')
+    })
+
+    it('should show an error message if entered an incorrect URL', () => {
+        cy.visit('http://localhost:3000/fdsfds')
+          .get('h3').contains('404: Sorry, that page doesn\'t exist.')
+    })
 })
