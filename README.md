@@ -56,6 +56,7 @@ The project specs can be found [here](https://frontend.turing.edu/projects/modul
 * ![Cypress][Cypress-shield]
 * ![Express.js][Express-shield]
 * ![Heroku][Heroku-shield]
+* ![Webpack][Webpack-shield]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -71,18 +72,26 @@ The project specs can be found [here](https://frontend.turing.edu/projects/modul
 <!-- INSTALLATION -->
 ## Installation 
 
-1.  Clone down both repos, adding them to separate directories 
-`git clone git@github.com:alinix1/showcase-project-api.git`
+1.  Clone down both repos, adding them to separate directories:
+```sh
+git clone git@github.com:alinix1/showcase-project-api.git
+```
 
-`git@github.com:alinix1/showcase-project-fe.git`
+```sh
+git clone git@github.com:alinix1/showcase-project-fe.git
+```
 
-2.  For front-end repository: Install NPM packages:
-`npm i` or `npm install` 
-`npm start`
+2.  For front-end repository: Install NPM packages
+```sh
+npm i or npm install
+npm start
+```
 
-For API repository:  Install NPM packages:
-`npm install`
-`node server.js`
+For API repository:  Install NPM packages
+```sh
+npm i or npm install
+node server.js
+```
 
 <!-- USAGE -->
 ## Usage
@@ -118,6 +127,7 @@ I was responsible for applying previous concepts and leveraging past projects to
 ## Roadmap
 
 - [ ] Refactor using Hooks 
+- [ ] Add more songs 
 - [ ] Build functionality to allow a user to play the selected song
 
 <!-- ACKNOWLEDGMENTS -->
@@ -125,9 +135,9 @@ I was responsible for applying previous concepts and leveraging past projects to
 
 Used the following resources during the project: 
 
-- ![MDN Web Docs][MDN-shield]
-- ![Stack Overflow][stack-overflow-shield] 
-- ![Turing][turing-shield]
+- [![MDN Docs][mdn-shield]][mdn]
+- [![Turing School](https://img.shields.io/badge/Turing_School-030303?style=for-the-badge)](https://turing.edu/)
+
 
 <!-- CONTACT -->
 ## Contact 
@@ -145,10 +155,12 @@ Ali Nix | [![LinkedIn][linkedin-shield]][linkedin-url1]
 [Cypress-shield]: https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e
 [Express-shield]: https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB
 [Heroku-shield]: https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white
+[Webpack-shield]: https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url1]: https://www.linkedin.com/in/ali-nix-38b9b9126/
 [turing-shield]: https://turing.edu/?ads_cmpid=1064466865&ads_adid=72751730870&ads_matchtype=b&ads_network=g&ads_creative=341753979066&utm_term=turing%20school&ads_targetid=kwd-307330888202&utm_campaign=&utm_source=adwords&utm_medium=ppc&ttv=2&gclid=Cj0KCQiAyMKbBhD1ARIsANs7rEHyZFP9Q4MTY1TMh4gsr49nBTFwyCrmEUtwwnHYpw_9krf7yiB_R1gaAiIfEALw_wcB
-[MDN-shield]: https://developer.mozilla.org/en-US/ 
-[stack-overflow-shield]: https://stackoverflow.com/
+[mdn]: https://developer.mozilla.org/en-US/
+[mdn-shield]: https://img.shields.io/badge/MDN_Web_Docs-black?style=for-the-badge&logo=mdnwebdocs&logoColor=white
+
 
