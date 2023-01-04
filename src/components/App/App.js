@@ -22,7 +22,7 @@ const App = () => {
   const saveSongPlaylist = (id) => {
     const favoriteSong = songs.find(song => song.id === id)
     if (!favoriteSongs.includes(favoriteSong)) {
-      setFavoriteSongs(...favoriteSongs, favoriteSong)
+      setFavoriteSongs([...favoriteSongs, favoriteSong])
     }
   }
 
