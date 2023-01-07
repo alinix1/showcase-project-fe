@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import './Songs.css'
 import Card from '../Card/Card'
 
-const Songs = ({ songs, saveSongPlaylist, favoriteSongs, deleteSong }) => {
+const Songs = ({ songs }) => {
     const songCards = songs.map(song => {
         return (
             <Card 
@@ -15,9 +15,6 @@ const Songs = ({ songs, saveSongPlaylist, favoriteSongs, deleteSong }) => {
                 songTitle={song.songTitle}
                 genre={song.genre}
                 key={song.id}
-                favoriteSongs={favoriteSongs}
-                deleteSong={deleteSong}
-                saveSongPlaylist={saveSongPlaylist}
             />
         )
     })
@@ -31,7 +28,7 @@ const Songs = ({ songs, saveSongPlaylist, favoriteSongs, deleteSong }) => {
 
 export default Songs
 
-Songs.propTypes = {
-    songs: PropTypes.arrayOf(PropTypes.object),
-    saveSongPlaylist: PropTypes.func.isRequired
-}
+// Songs.propTypes = {
+//     songs: PropTypes.arrayOf(PropTypes.object),
+//     saveSongPlaylist: PropTypes.func.isRequired
+// }

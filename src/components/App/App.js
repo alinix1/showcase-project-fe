@@ -8,7 +8,6 @@ import'./App.css'
 
 const App = () => {
   const [songs, setSongs] = useState([])
-  const [favoriteSongs, setFavoriteSongs] = useState([])
   const [errorMessage, setErrorMessage] = useState('')
  
   useEffect(() => { 
@@ -17,27 +16,15 @@ const App = () => {
     .catch((error) => {
       setErrorMessage( 'An error occurred, please try again.')
     })
-  },[])
+  },[]) 
 
-  const saveSongPlaylist = (id) => {
-    const favoriteSong = songs.find(song => song.id === id)
-    if (!favoriteSongs.includes(favoriteSong)) {
-      setFavoriteSongs([...favoriteSongs, favoriteSong])
-    }
-  }
-
-  const deleteSong = (id) => {
-    const deleteFavoriteSong = favoriteSongs.filter(song => song.id !== id)
-    setFavoriteSongs(deleteFavoriteSong)
-   
-  }
     return (
     <div className='app-container'>
       <main>
       <Header />
       <Switch>
-      <Route exact path='/' render={() => <Songs songs={songs} favoriteSongs={favoriteSongs} saveSongPlaylist={saveSongPlaylist} deleteSong={deleteSong}  />} />
-      <Route exact path='/playlist' render={() => <Playlist favoriteSongs={favoriteSongs} saveSongPlaylist={saveSongPlaylist} deleteSong={deleteSong} />}/>
+      <Route exact path='/' render={() => <Songs songs={songs} />} />
+      <Route exact path='/playlist' render={() => <Playlist songs={songs} />}/>
       <Route path='*'>
             <h3>404: Sorry, that page doesn't exist.</h3>
       </Route>
