@@ -51,6 +51,7 @@ The project specs can be found [here](https://frontend.turing.edu/projects/modul
 
 * ![React][React-shield]
 * ![React Router][React-Router-shield]
+* ![Redux][Redux-shield]
 * ![JavaScript][JavaScript-shield]
 * ![CSS][CSS-shield]
 * ![Cypress][Cypress-shield]
@@ -107,6 +108,7 @@ I was responsible for applying previous concepts and leveraging past projects to
 ## Feature Overview 
 - React framework 
 - React Router 
+- Redux
 - Express.js server 
 - Testing with Cypress 
 - Typechecking with PropTypes 
@@ -116,6 +118,7 @@ I was responsible for applying previous concepts and leveraging past projects to
 
 * Getting more comfortable with using Router and conditional rendering 
 * Completing this project in a short amount of time!
+* Refactored using Redux for global state management with help
 
 ## Challenges: 
 
@@ -126,7 +129,7 @@ I was responsible for applying previous concepts and leveraging past projects to
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Refactor using Hooks 
+- [X] Refactor using Hooks 
 - [ ] Add more songs 
 - [ ] Build functionality to allow a user to play the selected song
 
@@ -137,7 +140,6 @@ Used the following resources during the project:
 
 - [![MDN Docs][mdn-shield]][mdn]
 - [![Turing School](https://img.shields.io/badge/Turing_School-030303?style=for-the-badge)](https://turing.edu/)
-
 
 <!-- CONTACT -->
 ## Contact 
@@ -150,13 +152,13 @@ Ali Nix | [![LinkedIn][linkedin-shield]][linkedin-url1]
 
 [React-shield]: https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB
 [React-Router-shield]: https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white
+[Redux-shield]: https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white
 [JavaScript-shield]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
 [CSS-shield]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
 [Cypress-shield]: https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e
 [Express-shield]: https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB
 [Heroku-shield]: https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white
 [Webpack-shield]: https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black
-
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url1]: https://www.linkedin.com/in/ali-nix-38b9b9126/
 [turing-shield]: https://turing.edu/?ads_cmpid=1064466865&ads_adid=72751730870&ads_matchtype=b&ads_network=g&ads_creative=341753979066&utm_term=turing%20school&ads_targetid=kwd-307330888202&utm_campaign=&utm_source=adwords&utm_medium=ppc&ttv=2&gclid=Cj0KCQiAyMKbBhD1ARIsANs7rEHyZFP9Q4MTY1TMh4gsr49nBTFwyCrmEUtwwnHYpw_9krf7yiB_R1gaAiIfEALw_wcB
