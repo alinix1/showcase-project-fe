@@ -37,13 +37,12 @@ const Card = ({ id, albumCover, album, releaseDate, artist, songTitle, genre }) 
 
 export default Card
 
-// Card.propTypes = {
-//     id: PropTypes.number.isRequired,
-//     albumCover: PropTypes.string.isRequired,
-//     album: PropTypes.string.isRequired,
-//     releaseDate: PropTypes.string.isRequired,
-//     artist: PropTypes.string.isRequired, 
-//     songTitle: PropTypes.string.isRequired,
-//     genre: PropTypes.string.isRequired,
-//     saveSongPlaylist: PropTypes.func.isRequired
-// }
+Card.propTypes = {
+    id: PropTypes.number.isRequired,
+    albumCover: PropTypes.string.isRequired,
+    album: PropTypes.string.isRequired,
+    releaseDate: PropTypes.string.isRequired,
+    artist: PropTypes.string.isRequired, 
+    songTitle: PropTypes.string.isRequired,
+    genre: PropTypes.string.isRequired,
+}
