@@ -28,7 +28,6 @@ const Songs = ({ songs }) => {
 
 export default Songs
 
-// Songs.propTypes = {
-//     songs: PropTypes.arrayOf(PropTypes.object),
-//     saveSongPlaylist: PropTypes.func.isRequired
-// }
+Songs.propTypes = {
+    songs: PropTypes.arrayOf(PropTypes.object)
+}

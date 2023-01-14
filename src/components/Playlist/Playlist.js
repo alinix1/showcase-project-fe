@@ -12,7 +12,6 @@ const Playlist = ({ songs }) => {
     const favSongs = useSelector(state => state.favoriteSongs)
     const favoriteSongList = favSongs.favoriteSongs.reduce((favArr, favSong) => {
             songs.forEach(song => {
-                console.log(song.id)
                 if(favSong === song.id) {
                     favArr.push(<Card
                         id={song.id}
@@ -40,8 +39,7 @@ const Playlist = ({ songs }) => {
 }
 export default Playlist
 
-// Playlist.propTypes = {
-//     favoriteSongs: PropTypes.arrayOf(PropTypes.object),
-//     saveSongPlaylist: PropTypes.func.isRequired
-// }
+Playlist.propTypes = {
+    favoriteSongs: PropTypes.arrayOf(PropTypes.object)
+}
 
