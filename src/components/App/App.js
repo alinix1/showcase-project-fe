@@ -4,6 +4,7 @@ import Songs from '../Songs/Songs'
 import getSongsData from '../../apiCalls'
 import Header from '../Header/Header'
 import Playlist from '../Playlist/Playlist'
+import loading from '../../assets/loading.png'
 import'./App.css'
 
 const App = () => {
@@ -29,6 +30,12 @@ const App = () => {
             <h3>404: Sorry, that page doesn't exist.</h3>
       </Route>
       </Switch>
+      {!errorMessage && !songs.length && (
+        <div>
+          <img src={loading} alt='loading' className='loading-image' />
+          <h4 className='loading-text'>...loading your music</h4>
+        </div>
+      )}
       </main>
     </div> 
     )
