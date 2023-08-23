@@ -8,6 +8,11 @@ import loading from '../../assets/loading.png'
 import'./App.css'
 
 const App = () => {
+  const CLIENT_ID = '006804fd2b7a4eb5aaee1c88d0716840'
+  const REDIRECT_URI = "http://localhost:3000"
+  const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
+  const RESPONSE_TYPE = "token"
+
   const [songs, setSongs] = useState([])
   const [errorMessage, setErrorMessage] = useState('')
  
@@ -22,6 +27,7 @@ const App = () => {
     return (
     <div className='app-container'>
       <main>
+        <a href={`${AUTH_ENDPOINT}?client_id-${CLIENT_ID}&redirect_uri-${REDIRECT_URI}&response_type-${RESPONSE_TYPE}`}>login to Spotify</a>
       <Header />
       <Switch>
       <Route exact path='/' render={() => <Songs songs={songs} />} />
