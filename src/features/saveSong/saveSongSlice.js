@@ -28,6 +28,6 @@ export const saveSongSlice = createSlice({
   },
 });
 
-export const { saveSong, deleteSong, openYouTubeSong } = saveSongSlice.actions;
+export const { saveSong, deleteSong } = saveSongSlice.actions;
 
 export default saveSongSlice.reducer;

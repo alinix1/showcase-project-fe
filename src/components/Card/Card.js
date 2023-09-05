@@ -5,6 +5,7 @@ import active from "../../assets/active-heart-icon.png";
 import "./Card.css";
 import { useSelector, useDispatch } from "react-redux";
 import { saveSong, deleteSong } from "../../features/saveSong/saveSongSlice";
+import { Link } from "react-router-dom";
 
 // React Redux Hooks:
 // useSelector - get info from the store
@@ -53,6 +54,9 @@ const Card = ({
         Song: {songTitle}
       </a>
       <p className="genre-card">Genre: {genre}</p>
+      <Link to={`/${id}`}>
+        <p className="song-details-card">More Info</p>
+      </Link>
     </div>
   );
 };
