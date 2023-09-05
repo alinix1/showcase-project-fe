@@ -1,57 +1,56 @@
 .card {
-    position: relative;
-    color: black;
-    box-shadow: 3px 5px 5px grey;
-    background-image: linear-gradient(#DC3DEB, #9E2FD6, #7114F5);
-    box-sizing: border-box;
-    border-radius: 1.5rem;
-    border: 3px solid black;
-    padding: 10px;
+  position: relative;
+  color: black;
+  box-shadow: 3px 5px 5px grey;
+  background-image: linear-gradient(#dc3deb, #9e2fd6, #7114f5);
+  box-sizing: border-box;
+  border-radius: 1.5rem;
+  border: 3px solid black;
+  padding: 10px;
 }
 
 .mini-album-cover {
-    width: 200px;
-    height: 200px;
+  width: 200px;
+  height: 200px;
 }
 
 .mini-album-cover {
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -ms-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
-    opacity: 1;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
 }
 
 .mini-album-cover:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .album-card,
 .release-date-card {
-    padding: 5px;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0%
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0%;
 }
 
 .artist-card,
 .song-card,
-.genre-card {
-    font-family: 'Sono', sans-serif;
-    font-weight: bold;
+.genre-card,
+.song-details-card {
+  font-family: "Sono", sans-serif;
+  font-weight: bold;
 }
 
 .song-card:hover {
-    color: red;
-    cursor: pointer;
-  }
-
-.heart-container {
-    cursor: pointer;
-    position: absolute;
-    top: 0px;
-    right: 0px;
+  color: red;
+  cursor: pointer;
 }
 
-  
+.heart-container {
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
