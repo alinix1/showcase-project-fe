@@ -5,11 +5,7 @@ import active from "../../assets/active-heart-icon.png";
 import "./Card.css";
 import { useSelector, useDispatch } from "react-redux";
 import { saveSong, deleteSong } from "../../features/saveSong/saveSongSlice";
-import { Link } from "react-router-dom";
-
-// React Redux Hooks:
-// useSelector - get info from the store
-// useDispatch - dispatch the action on reducers (saveSong and deleteSong)
+// import { Link } from "react-router-dom";
 
 const Card = ({
   id,
@@ -19,6 +15,7 @@ const Card = ({
   artist,
   songTitle,
   genre,
+  songDetails,
 }) => {
   const dispatch = useDispatch();
   const faveSongs = useSelector((state) => state.favoriteSongs);
@@ -54,9 +51,7 @@ const Card = ({
         Song: {songTitle}
       </a>
       <p className="genre-card">Genre: {genre}</p>
-      <Link to={`/${id}`}>
-        <p className="song-details-card">More Info</p>
-      </Link>
+      <p className="song-details-card">{songDetails}</p>
     </div>
   );
 };

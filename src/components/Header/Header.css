@@ -43,3 +43,63 @@ img {
   cursor: pointer;
   color: black;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  img {
+    height: 10vh;
+    width: auto;
+  }
+
+  .playlist-button-container,
+  .home-button-container,
+  .about-button-container {
+    width: auto;
+    height: 7.5vh;
+  }
+
+  header {
+    padding: 1rem;
+    margin-bottom: 5vw;
+    width: 330%;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  img {
+    height: 12vh;
+    min-width: 7vw;
+  }
+
+  .playlist-button-container,
+  .home-button-container,
+  .about-button-container {
+    min-width: 7vw;
+    height: 10vh;
+  }
+
+  header {
+    padding: 3rem;
+    margin-bottom: 7vw;
+    width: 245%;
+  }
+}
+
+/* @media only screen and (min-width: 769px) and (max-width: 1024px) {
+  img {
+    height: 10vh;
+    width: auto;
+  }
+
+  .playlist-button-container,
+  .home-button-container,
+  .about-button-container {
+    width: auto;
+    height: 7.5vh;
+  }
+
+  header {
+    padding: 1rem;
+    margin-bottom: 5vw;
+    width: 245%;
+  }
+} */
