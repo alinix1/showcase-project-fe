@@ -41,7 +41,9 @@ const App = () => {
             render={() => <Playlist songs={songs} />}
           />
           <Route path="*">
-            <h3>404: Sorry, that page doesn't exist.</h3>
+            <h3 data-cy="error-message-element">
+              404: Sorry, that page doesn't exist.
+            </h3>
           </Route>
         </Switch>
         {!errorMessage && !songs.length && (
