@@ -1,45 +1,53 @@
-describe('Landing Page', () => {
-    beforeEach(() => {
-        cy.intercept('GET', 'https://beats4devs-api.herokuapp.com/api/v1/songs', {
-            fixture: "songs"
-        })
-        cy.visit('http://localhost:3000')
-    })
+/*TODO*/
+// use Cypress testing best practices - refer to other projects or docs
+// include testing for About page
+// include testing for songDetails
 
-    it('should be able to add song to playlist and render song on the playlist page', () => {
-        cy.get(':nth-child(1) > .heart-container > img')
-           .first().click()
-           .get('.songs-container > :nth-child(1)')
+describe("Landing Page", () => {
+  beforeEach(() => {
+    cy.intercept("GET", "https://beats4devs-api.herokuapp.com/api/v1/songs", {
+      fixture: "songs",
+      statusCode: 200,
+      ok: true,
+    });
+    cy.visit("http://localhost:3000");
+  });
 
-           .get('.playlist-button-container')
-           .click()
-    })
+  it("Should be able to add song to playlist and render song on the playlist page", () => {
+    cy.get(":nth-child(1) > .heart-container > img")
+      .first()
+      .click()
+      .get(".songs-container > :nth-child(1)")
 
-    it('should be able to delete song in playlist and render playlist page with no songs', () => {
-        cy.get(':nth-child(1) > .heart-container > img')
-           .first().click()
-           .get('.songs-container > :nth-child(1)')
+      .get(".playlist-button-container")
+      .click();
+  });
 
-           .get('.playlist-button-container')
-           .click()
+  it("Should be able to delete song in playlist and render playlist page with no songs", () => {
+    cy.get(":nth-child(1) > .heart-container > img")
+      .first()
+      .click()
+      .get(".songs-container > :nth-child(1)")
 
-           .get('.heart-container > img')
-           .click()
+      .get(".playlist-button-container")
+      .click()
 
-           .get('.favorite-songs-message')
-           
-    })
-    
-    it('should be able to navigate back to the landing page', () => {
-        cy.get(':nth-child(1) > .heart-container > img')
-           .first().click()
-           .get('.songs-container > :nth-child(1)')
+      .get(".heart-container > img")
+      .click()
 
-           .get('.playlist-button-container')
-           .click()
+      .get(".favorite-songs-message");
+  });
 
-           .get('.home-button-container')
-           .click()
-    })
+  it("Should be able to navigate back to the landing page", () => {
+    cy.get(":nth-child(1) > .heart-container > img")
+      .first()
+      .click()
+      .get(".songs-container > :nth-child(1)")
 
-})
+      .get(".playlist-button-container")
+      .click()
+
+      .get(".home-button-container")
+      .click();
+  });
+});
