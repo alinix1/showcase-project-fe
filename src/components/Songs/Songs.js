@@ -20,7 +20,11 @@ const Songs = ({ songs }) => {
     );
   });
 
-  return <div className="songs-container">{songCards}</div>;
+  return (
+    <div className="songs-container" data-cy="songs-container-element">
+      {songCards}
+    </div>
+  );
 };
 
 export default Songs;

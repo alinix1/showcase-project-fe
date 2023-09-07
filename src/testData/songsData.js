@@ -7,6 +7,8 @@ const songsData = [
     artist: "Nathan Salsburg",
     songTitle: "Impossible Air",
     genre: "folk",
+    songDetails:
+      "Nathan Salsburg is a guitarist and composer. He is a frequent collaborator of songwriter-singer Joan Shelley, occasional guitar-duo partner to James Elkington, and has contributed to recordings by Shirley Collins, Bonnie 'Prince' Billy, the Weather Station, and Jake Xerxes Fussell, among others.",
   },
   {
     id: 2,
@@ -17,6 +19,7 @@ const songsData = [
     artist: "Calan McIntyre",
     songTitle: "Mullaghmore",
     genre: "unknown",
+    songDetails: "sorry, we couldn't find any details on this artist",
   },
   {
     id: 3,
@@ -27,6 +30,8 @@ const songsData = [
     artist: "Khruangbin",
     songTitle: "Summer Madness",
     genre: "psychedelic rock",
+    songDetails:
+      "Khruangbin is an American musical trio from Houston, Texas. The band comprises Laura Lee on bass, Mark Speer on guitar, and Donald 'DJ' Johnson Jr. on drums. The band is known for blending global music influences, such as classic soul, dub, rock and psychedelia.",
   },
   {
     id: 4,
@@ -37,6 +42,8 @@ const songsData = [
     artist: "Daft Punk",
     songTitle: 'Solar Sailer - From "TRON: Legacy"/Score',
     genre: "electronic",
+    songDetails:
+      "Daft Punk were a French electronic music duo formed in 1993 in Paris by Thomas Bangalter and Guy-Manuel de Homem-Christo. They achieved popularity in the late 1990s as part of the French house movement, combining elements of house music with funk, disco, techno, rock and synth-pop.",
   },
   {
     id: 5,
@@ -47,6 +54,8 @@ const songsData = [
     artist: "Kiasmos",
     songTitle: "Looped",
     genre: "dance/electronic",
+    songDetails:
+      "Kiasmos is a Faroese-Icelandic minimal, experimental techno duo, composed of \u00D3lafur Arnalds and Janus Rasmussen. They started in 2009 and released their first extended play, Thrown, in 2012 and their album Kiasmos in 2014.",
   },
   {
     id: 6,
@@ -57,6 +66,8 @@ const songsData = [
     artist: "Absofacto, NITESHIFT",
     songTitle: "Dissolve",
     genre: "experimental pop",
+    songDetails:
+      "Absofacto is a solo project by musician Jonathan Visger, a member of Michigan-based indie rock band Mason Proper.[1][2] In 2008, Visger released his first solo efforts, North South, Pt. 1, under his own name, and Trilobite Trash, under the pseudonym Bug Lung Baby. In 2009, the EP Tagalong was released under the moniker Absofacto, the name Visger has used for all his solo musical projects since.",
   },
   {
     id: 7,
@@ -67,6 +78,7 @@ const songsData = [
     artist: "Freddy Beats",
     songTitle: "Escape",
     genre: "hip hop/rap",
+    songDetails: "sorry, we couldn't find any details on this artist",
   },
   {
     id: 8,
@@ -76,6 +88,8 @@ const songsData = [
     artist: "Athena, smle",
     songTitle: "Eternal",
     genre: "kawaii future bass",
+    songDetails:
+      "Smle is an American electronic music duo consisting of Ruben Cardenas and Lewis Martinee. They are best known for their remix of Bobby Rush's song 'Funk O'De Funk', for which they were nominated for the Best Remixed Recording award at the 60th Annual Grammy Awards.",
   },
   {
     id: 9,
@@ -86,6 +100,8 @@ const songsData = [
     artist: "Lil Nas X",
     songTitle: "THATS WHAT I WANT",
     genre: "pop rap",
+    songDetails:
+      "Montero Lamar Hill (born April 9, 1999), known by his stage name Lil Nas X, is an American rapper, singer, and songwriter. He rose to prominence with the release of his country rap single 'Old Town Road', which spent 19 weeks atop the U.S. Billboard Hot 100 chart, becoming the longest-running number-one song since the chart debuted in 1958. As the song was atop the Hot 100, Lil Nas X came out as gay, becoming the only artist to do so while having a number-one record.",
   },
   {
     id: 10,
@@ -96,6 +112,8 @@ const songsData = [
     artist: "Novo Amor",
     songTitle: "No Plans",
     genre: "alternative/indie",
+    songDetails:
+      "Ali John Meredith-Lacey, better known under the moniker Novo Amor, is a Welsh multi-instrumentalist, singer, songwriter, sound designer and producer. Lacey rose to prominence after the release of his debut EP Woodgate, NY in March 2014.",
   },
   {
     id: 11,
@@ -106,6 +124,7 @@ const songsData = [
     artist: "Hash3r",
     songTitle: "Heavy Haze",
     genre: "japanese hip hop/rap",
+    songDetails: "sorry, we couldn't find any details on this artist",
   },
   {
     id: 12,
@@ -116,6 +135,8 @@ const songsData = [
     artist: "Spencer Hunt, WYS",
     songTitle: "Vhs",
     genre: "lo-fi",
+    songDetails:
+      "Spencer Hunt is a multi-instrumentalist and producer from St. Louis, Missouri. Pursuing a full-time music career, he enjoys exploring new sounds and creating soothing melodies from his home studio.",
   },
   {
     id: 13,
@@ -125,6 +146,7 @@ const songsData = [
     artist: "SOUNDSBYLAITUE",
     songTitle: "Pixel Quest",
     genre: "dance/electronic",
+    songDetails: "sorry, we couldn't find any details on this artist",
   },
   {
     id: 14,
@@ -135,6 +157,8 @@ const songsData = [
     artist: "Kavinsky",
     songTitle: "Pacific Coast Highway",
     genre: "french house synthwave",
+    songDetails:
+      "Vincent Belorgey (born 31 July 1975), known professionally as Kavinsky, is a French musician, producer, DJ, and actor. His production style is reminiscent of the electropop film soundtracks of the 1980s. Kavinsky claims that his music is inspired by thousands of movies he watched as a young boy and that he has cherry-picked the best parts from them, consolidating them into one concept. Kavinsky has been compared to many similar French house artists, including Daft Punk and Danger. He achieved greater mainstream recognition after his song 'Nightcall' was featured in the 2011 film Drive. His debut studio album, OutRun, was released in 2013.",
   },
   {
     id: 15,
@@ -145,6 +169,8 @@ const songsData = [
     artist: "Ludwig van Beethoven, Igor Levit",
     songTitle: 'Bagatelle No. 25 in A Minor, WoO 59 "Fur Elise"',
     genre: "classical",
+    songDetails:
+      "Ludwig van Beethoven was a German composer and pianist. Beethoven remains one of the most admired composers in the history of Western music; his works rank among the most performed of the classical music repertoire and span the transition from the Classical period to the Romantic era in classical music.",
   },
   {
     id: 16,
@@ -155,6 +181,7 @@ const songsData = [
     artist: "Gordon/Mckenna, Bobby Gordon, Dave McKenna,...",
     songTitle: "It's Been So Long",
     genre: "jazz",
+    songDetails: "sorry, we couldn't find any details on this artist",
   },
   {
     id: 17,
@@ -165,6 +192,8 @@ const songsData = [
     artist: "God Is An Astronaut",
     songTitle: "Agneya",
     genre: "rock",
+    songDetails:
+      "The band was formed in 2002 by twin brothers Niels and Torsten Kinsella, who took the inspiration for its name from a quote in the movie Nightbreed. God Is an Astronaut's debut album, The End of the Beginning, was released in 2002 on the Revive Records label, which is independently owned by the band. The album was intended to be a farewell to the industry. Two music videos, for 'The End of the Beginning' and 'From Dust to the Beyond', both produced by the band, received airplay on MTV UK and other MTV Europe networks.",
   },
   {
     id: 18,
@@ -175,6 +204,8 @@ const songsData = [
     artist: "Hoverchild",
     songTitle: "Sanctuary",
     genre: "natural sounds",
+    songDetails:
+      "Dreamy, ambient, emotional instrumental music from Germany.  Hoverchild is a German ambient instrumental project. The music features dreamy, emotive sounds and melodies, with expressive guitars and pianos on top.",
   },
   {
     id: 19,
@@ -185,6 +216,8 @@ const songsData = [
     artist: "Dario Marianelli",
     songTitle: "Isabel Is Dead",
     genre: "unknown",
+    songDetails:
+      "An Italian composer of film and concert music, Dario Marianelli is perhaps best known for his collaborations with movie director Joe Wright, which include Pride and Prejudice (2005), Atonement (2007), and Anna Karenina (2012). All three of those scores were nominated for Academy Awards, with Atonement taking home the statue in 2008.",
   },
   {
     id: 20,
@@ -195,6 +228,7 @@ const songsData = [
     artist: "Paul Kelly",
     songTitle: "Peace",
     genre: "alternative/indie",
+    songDetails: "sorry, we couldn't find any details on this artist",
   },
   {
     id: 21,
@@ -205,6 +239,8 @@ const songsData = [
     artist: "Mogwai",
     songTitle: "U-235",
     genre: "post-rock",
+    songDetails:
+      "Mogwai  are a Scottish post-rock band, formed in 1995 in Glasgow. The band consists of Stuart Braithwaite (guitar, vocals), Barry Burns (guitar, piano, synthesizer, vocals), Dominic Aitchison (bass guitar), and Martin Bulloch (drums). Mogwai typically compose lengthy guitar-based instrumental pieces that feature dynamic contrast, melodic bass guitar lines, and heavy use of distortion and effects.",
   },
   {
     id: 22,
@@ -215,6 +251,8 @@ const songsData = [
     artist: "Blue Wednesday, juniorodeo",
     songTitle: "Find Yourself",
     genre: "lo-fi hip hop",
+    songDetails:
+      "Hailing from the cold and wet landscape that is the Pacific Northwest, Gustav Joseph, professionally known as Blue Wednesday, is a Canadian musician, songwriter and producer. Identifying as genre-fluid, Gustav's sound highlights his artistry behind the piano, whilst honouring heavy influences from beatmakers and other instrumental acts that have inspired him from a young age.",
   },
   {
     id: 23,
@@ -225,6 +263,7 @@ const songsData = [
     artist: "Mommy",
     songTitle: "Jellyfish-Lamp",
     genre: "unknown",
+    songDetails: "sorry, we couldn't find any details on this artist",
   },
   {
     id: 24,
@@ -235,6 +274,8 @@ const songsData = [
     artist: "Duke Ellington, John Coltrane",
     songTitle: "My Little Brown Book",
     genre: "jazz",
+    songDetails:
+      "Edward Kennedy 'Duke' Ellington (April 29, 1899 - May 24, 1974) was an American jazz pianist, composer, and leader of his eponymous jazz orchestra from 1923 through the rest of his life. Born and raised in Washington, D.C., Ellington was based in New York City from the mid-1920s and gained a national profile through his orchestra's appearances at the Cotton Club in Harlem. A master at writing miniatures for the three-minute 78 rpm recording format, Ellington wrote or collaborated on more than one thousand compositions; his extensive body of work is the largest recorded personal jazz legacy, and many of his pieces have become standards. He also recorded songs written by his bandsmen, such as Juan Tizol's 'Caravan', which brought a Spanish tinge to big band jazz.",
   },
   {
     id: 25,
@@ -245,6 +286,7 @@ const songsData = [
     artist: "Emperor",
     songTitle: "She Said - Original Mix",
     genre: "drum and bass",
+    songDetails: "sorry, we couldn't find any details on this artist",
   },
   {
     id: 26,
@@ -254,6 +296,7 @@ const songsData = [
     artist: "iLLFlip",
     songTitle: "Chinese Flower",
     genre: "afro house",
+    songDetails: "sorry, we couldn't find any details on this artist",
   },
   {
     id: 27,
@@ -264,6 +307,8 @@ const songsData = [
     artist: "Space 92",
     songTitle: "Colonia",
     genre: "dance/electronic",
+    songDetails:
+      "One of Techno music's best-selling artists and the mind behind a string of Number One hits, Space 92 is a trailblazing French producer. His sound identity is a mix of trancey Techno, distorted percussion and a touch of Acid, in addition to underlying sensitivity and nostalgia.",
   },
   {
     id: 28,
@@ -274,6 +319,8 @@ const songsData = [
     artist: "Toby Romeo, Leony",
     songTitle: "Crazy Love",
     genre: "dance/electro pop",
+    songDetails:
+      "Toby Romeo is an Austrian DJ and music producer from Salzburg best known for the song 'Where the Lights Are Low' featuring Felix Jaehn. He also had appearances at international music festivals such as Parookaville and Electric Love. He is signed by Universal.",
   },
   {
     id: 29,
@@ -284,6 +331,8 @@ const songsData = [
     artist: "Tycho",
     songTitle: "Weather",
     genre: "chillwave",
+    songDetails:
+      "Scott Hansen (born February 7, 1977), known professionally as Tycho, is an American musician, record producer, composer, and songwriter based in San Francisco. He is also known as ISO50 for his photographic and design work. His music blends multiple stylistic components, including downtempo guitar, analogue synthesis, and ambient elements such as breathing and found sounds of weather broadcasts and dialogue.",
   },
   {
     id: 30,
@@ -294,6 +343,8 @@ const songsData = [
     artist: "Louis-Ronan Choisy, Alexandra Chabane",
     songTitle: "Theme piano",
     genre: "classical pop",
+    songDetails:
+      "Louis-Ronan Choisy is a French singer-songwriter and actor born in Paris on 12 May 1977.",
   },
 ];
 

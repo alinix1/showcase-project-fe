@@ -37,7 +37,10 @@ const Playlist = ({ songs }) => {
   }, []);
   if (!favoriteSongList.length) {
     return (
-      <h2 className="favorite-songs-message">
+      <h2
+        className="favorite-songs-message"
+        data-cy="favorite-songs-message-element"
+      >
         Go add some of your favorite songs!
       </h2>
     );

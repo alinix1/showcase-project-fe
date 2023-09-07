@@ -21,9 +21,14 @@ const Card = ({
   const faveSongs = useSelector((state) => state.favoriteSongs);
 
   return (
-    <div className="card">
-      <img className="mini-album-cover" alt="album cover" src={albumCover} />
-      <div className="heart-container">
+    <div className="card" data-cy="card-element">
+      <img
+        className="mini-album-cover"
+        data-cy="mini-album-cover-img"
+        alt="album cover"
+        src={albumCover}
+      />
+      <div className="heart-container" data-cy="heart-container-element">
         {!faveSongs.favoriteSongs.includes(id) && (
           <img
             src={heart}
@@ -39,19 +44,30 @@ const Card = ({
           />
         )}
       </div>
-      <p className="album-card">Album: {album}</p>
-      <p className="release-date-card">Release Date: {releaseDate}</p>
-      <p className="artist-card">Artist: {artist}</p>
+      <p className="album-card" data-cy="album-card-element">
+        Album: {album}
+      </p>
+      <p className="release-date-card" data-cy="release-date-card-element">
+        Release Date: {releaseDate}
+      </p>
+      <p className="artist-card" data-cy="artist-card-element">
+        Artist: {artist}
+      </p>
       <a
         className="song-card"
+        data-cy="song-card-song"
         href="https://open.spotify.com/playlist/4E4reOpjBY0iwYUCtWeM76"
         rel="noreferrer"
         target="_blank"
       >
         Song: {songTitle}
       </a>
-      <p className="genre-card">Genre: {genre}</p>
-      <p className="song-details-card">{songDetails}</p>
+      <p className="genre-card" data-cy="genre-card-element">
+        Genre: {genre}
+      </p>
+      <p className="song-details-card" data-cy="song-details-card-element">
+        {songDetails}
+      </p>
     </div>
   );
 };
