@@ -1,20 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import Card from "../Card/Card";
-import { useSelector, useDispatch } from "react-redux";
-import { useLocalStorage } from "../../useLocalStorage";
+import { useSelector } from "react-redux";
 
 const Playlist = ({ songs }) => {
-  const [localStorageSongs, setLocalStorageSongs] = useLocalStorage(
-    "favoriteSongs",
-    []
-  );
-  const [favoriteSongs, setFavoriteSongs] = useState(localStorageSongs);
   const favSongs = useSelector((state) => state.favoriteSongs);
-  const dispatch = useDispatch();
-  useEffect(() => {
-    setLocalStorageSongs(favoriteSongs);
-  }, [favoriteSongs, setLocalStorageSongs]);
+
   const favoriteSongList = favSongs.favoriteSongs.reduce((favArr, favSong) => {
     songs.forEach((song) => {
       if (favSong === song.id) {
