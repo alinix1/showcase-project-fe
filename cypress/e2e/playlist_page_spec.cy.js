@@ -20,6 +20,8 @@ describe("Landing Page", () => {
       .get('[data-cy="songs-container-element"]')
       .get('[data-cy="playlist-btn"]')
       .click()
+      .get('[data-cy="card-element"]')
+      .should("have.length", 1)
       .wait(2000);
   });
   it("Should be able to delete song in playlist and render playlist page with no songs", () => {
