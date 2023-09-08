@@ -5,7 +5,6 @@ import active from "../../assets/active-heart-icon.png";
 import "./Card.css";
 import { useSelector, useDispatch } from "react-redux";
 import { saveSong, deleteSong } from "../../features/saveSong/saveSongSlice";
-// import { Link } from "react-router-dom";
 
 const Card = ({
   id,
