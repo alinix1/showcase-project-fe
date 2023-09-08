@@ -48,8 +48,15 @@ const App = () => {
         </Switch>
         {!errorMessage && !songs.length && (
           <div>
-            <img src={loading} alt="loading" className="loading-image" />
-            <h4 className="loading-text">...loading your music</h4>
+            <img
+              src={loading}
+              alt="loading"
+              className="loading-image"
+              data-cy="loading-text-element"
+            />
+            <h4 className="loading-text" data-cy="loading-text-element">
+              ...loading your music
+            </h4>
           </div>
         )}
       </main>

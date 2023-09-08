@@ -7,6 +7,12 @@ describe("Landing Page", () => {
     });
     cy.visit("http://localhost:3000");
   });
+  it("Should render a loading icon and message while content is loading", () => {
+    cy.get('[data-cy="loading-text-element"]')
+      .should("have.attr", "src")
+      .get('[data-cy="loading-text-element"]')
+      .contains("...loading your music");
+  });
   it("Should render a header", () => {
     cy.get('[data-cy="header-element"]')
       .should("be.visible")
