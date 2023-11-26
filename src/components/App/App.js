@@ -3,7 +3,6 @@ import { Route, Switch } from "react-router-dom";
 import Songs from "../Songs/Songs";
 import getSongsData from "../../apiCalls";
 import Header from "../Header/Header";
-// import SongDetails from "../SongDetails/SongDetails";
 import Playlist from "../Playlist/Playlist";
 import About from "../About/About";
 import loading from "../../assets/loading.png";
@@ -27,14 +26,7 @@ const App = () => {
         <Header />
         <Switch>
           <Route exact path="/" render={() => <Songs songs={songs} />} />
-          <Route path="/about" render={() => <About />} />
-          {/* <Route
-            exact
-            path="/:id"
-            render={({ match }) => {
-              return <SongDetails id={match.params.id} />;
-            }}
-          /> */}
+          <Route exact path="/about" render={() => <About />} />
           <Route
             exact
             path="/playlist"
