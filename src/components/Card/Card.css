@@ -1,5 +1,4 @@
 .card {
-  position: relative;
   color: black;
   box-shadow: 3px 5px 5px grey;
   background-image: linear-gradient(#dc3deb, #9e2fd6, #7114f5);
@@ -7,14 +6,74 @@
   border-radius: 1.5rem;
   border: 3px solid black;
   padding: 10px;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 30rem;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.card-side {
+  height: 30rem;
+  transition: transform 0.8s ease;
+  position: absolute;
+  width: 100%;
+  backface-visibility: hidden;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+}
+
+.card-side-front,
+.card-side-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+}
+
+.card-side-back {
+  background-image: linear-gradient(#dc3deb, #9e2fd6, #7114f5);
+  transform: rotateY(180deg);
+}
+
+.card:hover .card-side-front {
+  transform: rotateY(180deg);
+  opacity: 0;
+}
+
+.card:hover .card-side-back {
+  transform: rotateY(180deg);
+}
+
+.playlist-card {
+  perspective: none;
+  transform-style: flat;
+}
+
+.playlist-card:hover {
+  transform: none;
 }
 
 .mini-album-cover {
+  width: 50%;
+  height: auto;
+  margin-top: 2rem;
+}
+
+.mini-album-cover-back {
   width: 200px;
   height: 200px;
+  margin-top: 2rem;
 }
 
-.mini-album-cover {
+.mini-album-cover-back {
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -ms-transition: opacity 1s ease-in-out;
@@ -23,7 +82,7 @@
   opacity: 1;
 }
 
-.mini-album-cover:hover {
+.mini-album-cover-back:hover {
   opacity: 0.5;
 }
 
@@ -55,6 +114,8 @@
   top: 0px;
   right: 0px;
 }
+
+/* RESPONSIVE DESIGN */
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .card {

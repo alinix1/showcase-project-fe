@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Card from "../Card/Card";
 import { useSelector } from "react-redux";
+import "./Playlist.css";
 
 const Playlist = ({ songs }) => {
   const favSongs = useSelector((state) => state.favoriteSongs);
@@ -20,6 +21,9 @@ const Playlist = ({ songs }) => {
             genre={song.genre}
             songDetails={song.songDetails}
             key={song.id}
+            className={
+              favSongs.favoriteSongs.includes(song.id) ? "playlist-card" : ""
+            }
           />
         );
       }

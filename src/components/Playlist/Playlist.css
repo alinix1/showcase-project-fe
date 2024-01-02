@@ -1,4 +1,30 @@
+.songs-container .card.playlist-card .card-side,
+.songs-container .card.playlist-card .card-side-front,
+.songs-container .card.playlist-card .card-side-back {
+  transform: none;
+  opacity: 1;
+  transition: none;
+}
 
+.songs-container .card.playlist-card .card-side-back {
+  background-image: linear-gradient(#dc3deb, #9e2fd6, #7114f5);
+  transform: none;
+}
 
+.songs-container .card.playlist-card:hover .card-side-front {
+  transform: none;
+  opacity: 1;
+}
 
+.songs-container .card.playlist-card:hover .card-side-back {
+  transform: none;
+}
 
+.songs-container .card.playlist-card .mini-album-cover-back {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.songs-container .card.playlist-card .mini-album-cover-back:hover {
+  opacity: 0.5;
+}
