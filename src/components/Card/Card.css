@@ -123,6 +123,12 @@
   }
 }
 
+@media only screen and (min-width: 20em) and (max-width: 31.25em) {
+  .song-details-card {
+    font-size: 10px;
+  }
+}
+
 @media only screen and (max-width: 37.5em) {
   .heart-icon {
     height: 24px;
