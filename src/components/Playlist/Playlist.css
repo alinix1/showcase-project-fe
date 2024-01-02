@@ -28,3 +28,11 @@
 .songs-container .card.playlist-card .mini-album-cover-back:hover {
   opacity: 0.5;
 }
+
+@media only screen and (min-width: 37.5em) and (max-width: 56.25em) {
+  .favorite-songs-message {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 1em;
+  }
+}

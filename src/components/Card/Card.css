@@ -115,22 +115,8 @@
   right: 0px;
 }
 
-/* RESPONSIVE DESIGN */
-
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+/* @media only screen and (min-width: 320px) and (max-width: 480px) {
   .card {
     padding: 40px 60px 40px 60px;
   }
-}
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  .card {
-    padding: 40px 85px 60px 85px;
-  }
-}
-
-/*
-@media only screen and (min-width:769px) and (max-width:1024px) {
-  .card {
-    padding: 
 } */

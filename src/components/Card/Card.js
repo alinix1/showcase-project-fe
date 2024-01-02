@@ -47,6 +47,7 @@ const Card = ({
         <div className="heart-container" data-cy="heart-container-element">
           {!faveSongs.favoriteSongs.includes(id) && (
             <img
+              className="heart-icon"
               src={heart}
               alt="add favorite"
               loading="lazy"
@@ -55,6 +56,7 @@ const Card = ({
           )}
           {faveSongs.favoriteSongs.includes(id) && (
             <img
+              className="heart-icon"
               src={active}
               alt="delete favorite"
               loading="lazy"

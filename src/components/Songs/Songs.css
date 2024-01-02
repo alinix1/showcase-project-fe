@@ -1,7 +1,18 @@
 .songs-container {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;   
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .songs-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .songs-container {
+    grid-template-columns: 1fr;
+  }
+}
