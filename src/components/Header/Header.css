@@ -44,62 +44,41 @@ img {
   color: black;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  img {
-    height: 10vh;
-    width: auto;
-  }
-
-  .playlist-button-container,
-  .home-button-container,
-  .about-button-container {
-    width: auto;
-    height: 7.5vh;
-  }
-
+@media only screen and (max-width: 37.5em) {
   header {
-    padding: 1rem;
-    margin-bottom: 5vw;
-    width: 330%;
-  }
-}
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  img {
-    height: 12vh;
-    min-width: 7vw;
-  }
-
-  .playlist-button-container,
-  .home-button-container,
-  .about-button-container {
-    min-width: 7vw;
-    height: 10vh;
-  }
-
-  header {
+    display: flex;
+    flex-direction: column;
     padding: 3rem;
     margin-bottom: 7vw;
-    width: 245%;
+    width: 100%;
+    box-sizing: border-box;
   }
-}
 
-/* @media only screen and (min-width: 769px) and (max-width: 1024px) {
   img {
-    height: 10vh;
+    height: 2vh;
     width: auto;
   }
 
   .playlist-button-container,
   .home-button-container,
   .about-button-container {
-    width: auto;
-    height: 7.5vh;
+    min-width: 7vw;
+    height: 10vh;
+    margin-bottom: 10px;
   }
+}
 
-  header {
-    padding: 1rem;
-    margin-bottom: 5vw;
-    width: 245%;
+@media only screen and (min-width: 37.5em) and (max-width: 56.25em) {
+  .home-button-container,
+  .playlist-button-container,
+  .about-button-container {
+    width: auto;
+    height: 3vh;
   }
-} */
+}
+
+@media only screen and (max-width: 37.5em) {
+  .logo-headphones {
+    display: none;
+  }
+}
