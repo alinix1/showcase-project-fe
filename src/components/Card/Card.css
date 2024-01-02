@@ -115,8 +115,28 @@
   right: 0px;
 }
 
-/* @media only screen and (min-width: 320px) and (max-width: 480px) {
-  .card {
-    padding: 40px 60px 40px 60px;
+@media only screen and (min-width: 41.875em) and (max-width: 56.25em) {
+  .mini-album-cover {
+    width: 30%;
+    height: auto;
+    margin-top: 2rem;
   }
-} */
+}
+
+@media only screen and (max-width: 37.5em) {
+  .heart-icon {
+    height: 24px;
+    width: 24px;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media only screen and (max-width: 93.75em) {
+  .heart-icon {
+    height: 26px;
+    width: 26px;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+}
