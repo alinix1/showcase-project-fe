@@ -22,7 +22,10 @@ const Card = ({
 
   return (
     <div className={`card generic-card ${className}`} data-cy="card-element">
-      <div className="card-side card-side-front">
+      <div
+        className="card-side card-side-front"
+        data-cy="card-side-front-element"
+      >
         <img
           className="mini-album-cover"
           data-cy="mini-album-cover-img"
@@ -43,11 +46,15 @@ const Card = ({
           Genre: {genre}
         </p>
       </div>
-      <div className="card-side card-side-back">
+      <div
+        className="card-side card-side-back"
+        data-cy="card-side-back-element"
+      >
         <div className="heart-container" data-cy="heart-container-element">
           {!faveSongs.favoriteSongs.includes(id) && (
             <img
               className="heart-icon"
+              data-cy="heart-icon-element"
               src={heart}
               alt="add favorite"
               loading="lazy"
@@ -57,6 +64,7 @@ const Card = ({
           {faveSongs.favoriteSongs.includes(id) && (
             <img
               className="heart-icon"
+              data-cy="heart-icon-element"
               src={active}
               alt="delete favorite"
               loading="lazy"
@@ -66,7 +74,7 @@ const Card = ({
         </div>
         <img
           className="mini-album-cover-back"
-          data-cy="mini-album-cover-img"
+          data-cy="mini-album-cover-back-img"
           alt="album cover"
           loading="lazy"
           src={albumCover}
