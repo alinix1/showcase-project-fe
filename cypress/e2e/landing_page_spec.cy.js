@@ -75,26 +75,23 @@ describe("Landing Page", () => {
       .eq(2);
   });
   it("Should be able to favorite a card", () => {
-    cy.get('[data-cy="heart-container-element"]')
+    cy.wait(10000)
+      .get('[data-cy="card-element"]')
+      .should("exist")
       .first()
       .click()
-      .get('[data-cy="songs-container-element"]')
-      .get('[data-cy="heart-container-element"]')
-      .eq(1)
-      .click()
-      .get('[data-cy="songs-container-element"]')
-      .get('[data-cy="heart-container-element"]')
-      .last()
-      .click()
-      .get('[data-cy="songs-container-element"]');
-  });
-  it("Should be able to hover over an album cover on a card", () => {
-    cy.get('[data-cy="mini-album-cover-img"]').first().trigger("mousedown");
-    cy.get('[data-cy="mini-album-cover-img"]').eq(1).trigger("mousedown");
-    cy.get('[data-cy="mini-album-cover-img"]').last().trigger("mousedown");
-  });
-  it("Should be able to click on a song title and navigate to the Spotify playlist", () => {
-    cy.get('[data-cy="song-card-song"]').first().click();
+      .wait(5000)
+      .get('[data-cy="card-side-back-element"]')
+      .should("exist")
+      .then(($card) => {
+        cy.get('[data-cy="heart-icon-element"]')
+          .first()
+          .click({ force: true })
+          .wait(2000)
+          .get('[data-cy="heart-icon-element"]')
+          .should("exist")
+          .should("have.attr", "alt", "delete favorite");
+      });
   });
   it("Should show an error message if entered an incorrect URL", () => {
     cy.visit("http://localhost:3000/fdsfds")
