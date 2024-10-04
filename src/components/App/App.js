@@ -13,7 +13,7 @@ const App = () => {
   const [errorMessage, setErrorMessage] = useState("");
 
   useEffect(() => {
-    getSongsData(`/songs`)
+    getSongsData("/songs")
       .then((data) => setSongs(data.songs))
       .catch((error) => {
         setErrorMessage("An error occurred, please try again.");
