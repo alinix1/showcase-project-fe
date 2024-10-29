@@ -31,7 +31,6 @@ const Card = ({
           data-cy="mini-album-cover-img"
           alt="album cover"
           src={albumCover}
-          loading="lazy"
         />
         <p className="album-card" data-cy="album-card-element">
           Album: {album}
@@ -57,7 +56,6 @@ const Card = ({
               data-cy="heart-icon-element"
               src={heart}
               alt="add favorite"
-              loading="lazy"
               onClick={() => dispatch(saveSong(id))}
             />
           )}
@@ -67,7 +65,6 @@ const Card = ({
               data-cy="heart-icon-element"
               src={active}
               alt="delete favorite"
-              loading="lazy"
               onClick={() => dispatch(deleteSong(id))}
             />
           )}
@@ -76,7 +73,6 @@ const Card = ({
           className="mini-album-cover-back"
           data-cy="mini-album-cover-back-img"
           alt="album cover"
-          loading="lazy"
           src={albumCover}
         />
         <p className="song-details-card" data-cy="song-details-card-element">
