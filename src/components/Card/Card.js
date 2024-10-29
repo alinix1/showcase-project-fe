@@ -5,6 +5,8 @@ import active from "../../assets/active-heart-icon.png";
 import "./Card.css";
 import { useSelector, useDispatch } from "react-redux";
 import { saveSong, deleteSong } from "../../features/saveSong/saveSongSlice";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/opacity.css";
 
 const Card = ({
   id,
