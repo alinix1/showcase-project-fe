@@ -28,11 +28,12 @@ const Card = ({
         className="card-side card-side-front"
         data-cy="card-side-front-element"
       >
-        <img
+        <LazyLoadImage
           className="mini-album-cover"
           data-cy="mini-album-cover-img"
           alt="album cover"
           src={albumCover}
+          effect="opacity"
         />
         <p className="album-card" data-cy="album-card-element">
           Album: {album}
@@ -71,11 +72,12 @@ const Card = ({
             />
           )}
         </div>
-        <img
+        <LazyLoadImage
           className="mini-album-cover-back"
           data-cy="mini-album-cover-back-img"
           alt="album cover"
           src={albumCover}
+          effect="opacity"
         />
         <p className="song-details-card" data-cy="song-details-card-element">
           {songDetails}
