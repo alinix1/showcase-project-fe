@@ -10,6 +10,7 @@ const About = () => {
         className="about-photo"
         data-cy="about-photo-element"
         alt="dj playing music"
+        loading="lazy"
       />
       <div className="about-info" data-cy="about-info-element">
         <h2 className="about-info-title" data-cy="about-info-title-element">

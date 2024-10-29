@@ -5,6 +5,8 @@ import active from "../../assets/active-heart-icon.png";
 import "./Card.css";
 import { useSelector, useDispatch } from "react-redux";
 import { saveSong, deleteSong } from "../../features/saveSong/saveSongSlice";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/opacity.css";
 
 const Card = ({
   id,
@@ -26,12 +28,12 @@ const Card = ({
         className="card-side card-side-front"
         data-cy="card-side-front-element"
       >
-        <img
+        <LazyLoadImage
           className="mini-album-cover"
           data-cy="mini-album-cover-img"
           alt="album cover"
           src={albumCover}
-          loading="lazy"
+          effect="opacity"
         />
         <p className="album-card" data-cy="album-card-element">
           Album: {album}
@@ -57,7 +59,6 @@ const Card = ({
               data-cy="heart-icon-element"
               src={heart}
               alt="add favorite"
-              loading="lazy"
               onClick={() => dispatch(saveSong(id))}
             />
           )}
@@ -67,17 +68,16 @@ const Card = ({
               data-cy="heart-icon-element"
               src={active}
               alt="delete favorite"
-              loading="lazy"
               onClick={() => dispatch(deleteSong(id))}
             />
           )}
         </div>
-        <img
+        <LazyLoadImage
           className="mini-album-cover-back"
           data-cy="mini-album-cover-back-img"
           alt="album cover"
-          loading="lazy"
           src={albumCover}
+          effect="opacity"
         />
         <p className="song-details-card" data-cy="song-details-card-element">
           {songDetails}
