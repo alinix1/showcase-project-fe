@@ -39,6 +39,7 @@
 </div>
 
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 ![Beats 4 Devs](https://user-images.githubusercontent.com/28677929/201538816-adcda1ae-7a08-4c29-b4bf-44bbe4b64d47.gif)
@@ -49,31 +50,33 @@ The project specs can be found [here](https://frontend.turing.edu/projects/modul
 
 ### Built With
 
-* ![React][React-shield]
-* ![React Router][React-Router-shield]
-* ![Redux][Redux-shield]
-* ![JavaScript][JavaScript-shield]
-* ![CSS][CSS-shield]
-* ![Cypress][Cypress-shield]
-* ![Express.js][Express-shield]
-* ![Heroku][Heroku-shield]
-* ![Webpack][Webpack-shield]
-
+- ![React][React-shield]
+- ![React Router][React-Router-shield]
+- ![Redux][Redux-shield]
+- ![JavaScript][JavaScript-shield]
+- ![CSS][CSS-shield]
+- ![Cypress][Cypress-shield]
+- ![Express.js][Express-shield]
+- ![Heroku][Heroku-shield]
+- ![Webpack][Webpack-shield]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 <!-- SETUP -->
+
 ## Setup
+
 - Visit [Deployed Site](https://showcase-project-fe.vercel.app/)
 - Link to [Back End](https://github.com/alinix1/showcase-project-api)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- INSTALLATION -->
-## Installation 
+
+## Installation
 
 1.  Clone down both repos, adding them to separate directories:
+
 ```sh
 git clone git@github.com:alinix1/showcase-project-api.git
 ```
@@ -83,18 +86,21 @@ git clone git@github.com:alinix1/showcase-project-fe.git
 ```
 
 2.  For front-end repository: Install NPM packages
+
 ```sh
 npm i or npm install
 npm start
 ```
 
-For API repository:  Install NPM packages
+For API repository: Install NPM packages
+
 ```sh
 npm i or npm install
 node server.js
 ```
 
 <!-- USAGE -->
+
 ## Usage
 
 ![Beats 4 Devs](https://user-images.githubusercontent.com/28677929/201538816-adcda1ae-7a08-4c29-b4bf-44bbe4b64d47.gif)
@@ -102,47 +108,53 @@ node server.js
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- NOTES -->
-## Notes 
+
+## Notes
+
 I was responsible for applying previous concepts and leveraging past projects to create a full-stack application, including an Express.js server, and deployed using Heroku. I completed the project in less than a week. It was rewarding to be able to apply the learned technologies in this mod 🎉
 
-## Feature Overview 
-- React framework 
-- React Router 
+## Feature Overview
+
+- React framework
+- React Router
 - Redux
-- Express.js server 
-- Testing with Cypress 
-- Typechecking with PropTypes 
-- Deployment on Vercel and Heroku 
+- Express.js server
+- Testing with Cypress
+- Typechecking with PropTypes
+- Deployment on Vercel and Heroku
 
-## Wins: 
+## Wins:
 
-* Getting more comfortable with using Router and conditional rendering 
-* Completing this project in a short amount of time!
-* Refactored using Redux for global state management with help
+- Getting more comfortable with using Router and conditional rendering
+- Completing this project in a short amount of time!
+- Refactored using Redux for global state management with help
 
-## Challenges: 
+## Challenges:
 
-* Ternary operators and conditional logic for the toggle heart functionality 
+- Ternary operators and conditional logic for the toggle heart functionality
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ROADMAP -->
+
 ## Roadmap
 
-- [X] Refactor using Hooks 
-- [ ] Add more songs 
-- [ ] Build functionality to allow a user to play the selected song
+- [x] Refactor using Hooks
+- [ ] Use Spotify API to allow a user to play the selected song card
+- [ ] Add more songs
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments 
 
-Used the following resources during the project: 
+## Acknowledgments
+
+Used the following resources during the project:
 
 - [![MDN Docs][mdn-shield]][mdn]
 - [![Turing School](https://img.shields.io/badge/Turing_School-030303?style=for-the-badge)](https://turing.edu/)
 
 <!-- CONTACT -->
-## Contact 
+
+## Contact
 
 Ali Nix | [![LinkedIn][linkedin-shield]][linkedin-url1]
 
@@ -164,5 +176,3 @@ Ali Nix | [![LinkedIn][linkedin-shield]][linkedin-url1]
 [turing-shield]: https://turing.edu/?ads_cmpid=1064466865&ads_adid=72751730870&ads_matchtype=b&ads_network=g&ads_creative=341753979066&utm_term=turing%20school&ads_targetid=kwd-307330888202&utm_campaign=&utm_source=adwords&utm_medium=ppc&ttv=2&gclid=Cj0KCQiAyMKbBhD1ARIsANs7rEHyZFP9Q4MTY1TMh4gsr49nBTFwyCrmEUtwwnHYpw_9krf7yiB_R1gaAiIfEALw_wcB
 [mdn]: https://developer.mozilla.org/en-US/
 [mdn-shield]: https://img.shields.io/badge/MDN_Web_Docs-black?style=for-the-badge&logo=mdnwebdocs&logoColor=white
-
-
