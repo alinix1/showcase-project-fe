@@ -62,15 +62,11 @@
   transform: none;
 }
 
-.mini-album-cover {
-  width: 50%;
-  height: auto;
-  margin-top: 2rem;
-}
-
+.mini-album-cover,
 .mini-album-cover-back {
   width: 200px;
   height: 200px;
+  object-fit: cover;
   margin-top: 2rem;
 }
 
@@ -118,8 +114,8 @@
 
 @media only screen and (min-width: 41.875em) and (max-width: 56.25em) {
   .mini-album-cover {
-    width: 30%;
-    height: auto;
+    width: 150px;
+    height: 150px;
     margin-top: 2rem;
   }
 }
