@@ -1,7 +1,7 @@
 body {
   background-color: black;
   color: white;
-  cursor: url('../../assets/music_note.jpeg'), auto;
+  cursor: url("../../assets/music_note.jpeg"), auto;
   text-align: center;
 }
 
@@ -11,4 +11,22 @@ body {
   text-align: center;
   width: 100%;
   height: 100%;
+}
+
+.loading-text {
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+.loading-image {
+  height: 100px;
+  width: 100px;
+}
+
+@media only screen and (min-width: 41.875em) and (max-width: 56.25em) {
+  .loading-image {
+    height: 65px;
+    width: 65px;
+  }
 }
