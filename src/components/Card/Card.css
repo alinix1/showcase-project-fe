@@ -119,11 +119,6 @@
 }
 
 @media only screen and (max-width: 37.5em) {
-  /* .mini-album-cover {
-    width: 250px;
-    height: 250px;
-    margin-top: 2rem;
-  } */
   .heart-icon {
     height: 24px;
     width: 24px;
@@ -159,6 +154,11 @@
     width: 500px;
     height: 250px;
     margin-top: 2rem;
+    border-radius: 1.5rem;
+  }
+
+  .mini-album-cover-back {
+    border-radius: 1.5rem;
   }
   .album-card,
   .release-date-card,
