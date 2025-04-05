@@ -113,6 +113,7 @@
   right: 0px;
 }
 
+/* Very small mobile devices */
 @media only screen and (min-width: 20em) and (max-width: 41.75em) {
   .heart-icon {
     height: 45px;
