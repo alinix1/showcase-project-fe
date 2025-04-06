@@ -20,7 +20,7 @@
 
 @media only screen and (min-width: 56.3125em) and (max-width: 93.75em) {
   .songs-container {
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
   }
 }
