@@ -132,10 +132,11 @@
   .song-details-card {
     font-family: "Sono", sans-serif;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
+/* Mobile devices (smaller screens) */
 @media only screen and (max-width: 37.5em) {
   .heart-icon {
     height: 30px;
