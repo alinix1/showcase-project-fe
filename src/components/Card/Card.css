@@ -98,7 +98,7 @@
 .song-details-card {
   font-family: "Sono", sans-serif;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .song-card:hover {
@@ -113,6 +113,7 @@
   right: 0px;
 }
 
+/* Very small mobile devices */
 @media only screen and (min-width: 20em) and (max-width: 41.75em) {
   .heart-icon {
     height: 45px;
@@ -131,10 +132,11 @@
   .song-details-card {
     font-family: "Sono", sans-serif;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
+/* Mobile devices (smaller screens) */
 @media only screen and (max-width: 37.5em) {
   .heart-icon {
     height: 30px;
@@ -142,24 +144,38 @@
     margin-top: 5px;
     margin-right: 5px;
   }
+  .artist-card,
+  .genre-card,
+  .song-card,
   .song-details-card {
     font-size: 12px;
   }
 }
 
-@media only screen and (min-width: 41.875em) and (max-width: 56.25em) {
+/* Small to medium devices */
+@media only screen and (min-width: 37.6em) and (max-width: 56.25em) {
+  .heart-icon {
+    height: 40px;
+    width: 40px;
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+
   .mini-album-cover {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     margin-top: 2rem;
   }
 
+  .artist-card,
+  .genre-card,
+  .song-card,
   .song-details-card {
-    font-size: 15px;
+    font-size: 16px;
   }
 }
-
-@media only screen and (min-width: 48em) and (max-width: 64em) {
+/* Larger devices */
+@media only screen and (min-width: 56.26em) and (max-width: 64em) {
   .heart-icon {
     height: 45px;
     width: 45px;
@@ -168,8 +184,8 @@
   }
 
   .mini-album-cover {
-    width: 500px;
-    height: 250px;
+    width: 275px;
+    height: 275px;
     margin-top: 2rem;
     border-radius: 1.5rem;
   }
@@ -183,21 +199,21 @@
   .genre-card,
   .song-card,
   .song-details-card {
-    font-size: 17px;
+    font-size: 14px;
   }
 }
 
-@media only screen and (min-width: 50em) and (max-width: 53.3em) {
+@media only screen and (min-width: 64.1em) and (max-width: 85em) {
   .heart-icon {
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     margin-top: 5px;
     margin-right: 5px;
   }
 
   .mini-album-cover {
-    width: 500px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     margin-top: 2rem;
   }
   .album-card,
@@ -206,52 +222,6 @@
   .genre-card,
   .song-card,
   .song-details-card {
-    font-size: 15px;
-  }
-}
-
-@media only screen and (min-width: 53.31em) and (max-width: 80em) {
-  .heart-icon {
-    height: 45px;
-    width: 45px;
-    margin-top: 5px;
-    margin-right: 5px;
-  }
-
-  .mini-album-cover {
-    width: 500px;
-    height: 250px;
-    margin-top: 2rem;
-  }
-  .album-card,
-  .release-date-card,
-  .artist-card,
-  .genre-card,
-  .song-card,
-  .song-details-card {
-    font-size: 15px;
-  }
-}
-
-@media only screen and (min-width: 57em) and (max-width: 85.5em) {
-  .heart-icon {
-    height: 30px;
-    width: 30px;
-    margin-top: 5px;
-    margin-right: 5px;
-  }
-
-  .mini-album-cover {
-    width: 250px;
-    height: 250px;
-    margin-top: 2rem;
-  }
-  .album-card,
-  .release-date-card,
-  .artist-card,
-  .genre-card,
-  .song-card,
-  .song-details-card {
-    font-size: 10px;
+    font-size: 16px;
   }
 }
