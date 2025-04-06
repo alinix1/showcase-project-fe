@@ -184,9 +184,14 @@
   }
 
   .mini-album-cover {
-    width: 500px;
-    height: 250px;
+    width: 275px;
+    height: 275px;
     margin-top: 2rem;
+    border-radius: 1.5rem;
+  }
+
+  .mini-album-cover-back {
+    border-radius: 1.5rem;
   }
   .album-card,
   .release-date-card,
