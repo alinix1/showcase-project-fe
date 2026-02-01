@@ -12,10 +12,28 @@
   height: 30rem;
   transform-style: preserve-3d;
   transition: transform 0.8s ease;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
 }
 
-.card:hover {
+.card.flipped {
   transform: rotateY(180deg);
+}
+
+.card.flipped .card-side-front {
+  transform: rotateY(180deg);
+  opacity: 0;
+}
+
+.card.flipped .card-side-back {
+  transform: rotateY(180deg);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    transform: rotateY(180deg);
+  }
 }
 
 .card-side {
