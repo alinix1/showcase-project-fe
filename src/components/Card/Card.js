@@ -21,9 +21,25 @@ const Card = ({
 }) => {
   const dispatch = useDispatch();
   const faveSongs = useSelector((state) => state.favoriteSongs);
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const handleCardFlip = (event) => {
+    if (
+      event.target.closest(".heart-container") ||
+      event.target.closest(".song-card")
+    ) {
+      return;
+    }
+
+    setIsFlipped(!isFlipped);
+  };
 
   return (
-    <div className={`card generic-card ${className}`} data-cy="card-element">
+    <div
+      className={`card generic-card ${className} ${isFlipped ? "flipped" : ""}`}
+      data-cy="card-element"
+      onClick={handleCardFlip}
+    >
       <div
         className="card-side card-side-front"
         data-cy="card-side-front-element"
