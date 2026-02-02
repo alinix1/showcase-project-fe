@@ -29,10 +29,8 @@
   transform: rotateY(180deg);
 }
 
-@media (hover: hover) and (pointer: fine) {
-  .card:hover {
-    transform: rotateY(180deg);
-  }
+.card-side.hidden {
+  display: none !important;
 }
 
 .card-side {
@@ -58,15 +56,6 @@
 
 .card-side-back {
   background-image: linear-gradient(#dc3deb, #9e2fd6, #7114f5);
-  transform: rotateY(180deg);
-}
-
-.card:hover .card-side-front {
-  transform: rotateY(180deg);
-  opacity: 0;
-}
-
-.card:hover .card-side-back {
   transform: rotateY(180deg);
 }
 
