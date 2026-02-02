@@ -18,12 +18,17 @@ const Card = ({
   genre,
   songDetails,
   className,
+  isFlipped: initialIsFlipped = false,
 }) => {
   const dispatch = useDispatch();
   const faveSongs = useSelector((state) => state.favoriteSongs);
-  const [isFlipped, setIsFlipped] = useState(false);
+  const [isFlipped, setIsFlipped] = useState(initialIsFlipped);
 
   const handleCardFlip = (event) => {
+    if (className === "playlist-card") {
+      return;
+    }
+
     if (
       event.target.closest(".heart-container") ||
       event.target.closest(".song-card")
