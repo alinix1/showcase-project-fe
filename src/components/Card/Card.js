@@ -18,12 +18,17 @@ const Card = ({
   genre,
   songDetails,
   className,
+  isFlipped: initialIsFlipped = false,
 }) => {
   const dispatch = useDispatch();
   const faveSongs = useSelector((state) => state.favoriteSongs);
-  const [isFlipped, setIsFlipped] = useState(false);
+  const [isFlipped, setIsFlipped] = useState(initialIsFlipped);
 
   const handleCardFlip = (event) => {
+    if (className === "playlist-card") {
+      return;
+    }
+
     if (
       event.target.closest(".heart-container") ||
       event.target.closest(".song-card")
@@ -36,82 +41,79 @@ const Card = ({
 
   return (
     <div
-      className={`card generic-card ${className} ${isFlipped ? "flipped" : ""}`}
+      className={`card ${className} ${isFlipped ? "flipped" : ""}`}
       data-cy="card-element"
       onClick={handleCardFlip}
     >
-      {!isFlipped && (
-        <div
-          className="card-side card-side-front"
-          data-cy="card-side-front-element"
-        >
-          <LazyLoadImage
-            className="mini-album-cover"
-            data-cy="mini-album-cover-img"
-            alt="album cover"
-            src={albumCover}
-            effect="opacity"
-          />
-          <p className="album-card" data-cy="album-card-element">
-            Album: {album}
-          </p>
-          <p className="release-date-card" data-cy="release-date-card-element">
-            Release Date: {releaseDate}
-          </p>
-          <p className="artist-card" data-cy="artist-card-element">
-            Artist: {artist}
-          </p>
-          <p className="genre-card" data-cy="genre-card-element">
-            Genre: {genre}
-          </p>
+      <div
+        className={`card-side card-side-front ${isFlipped ? "hidden" : ""}`}
+        data-cy="card-side-front-element"
+      >
+        <LazyLoadImage
+          className="mini-album-cover"
+          data-cy="mini-album-cover-img"
+          alt="album cover"
+          src={albumCover}
+          effect="opacity"
+        />
+        <p className="album-card" data-cy="album-card-element">
+          Album: {album}
+        </p>
+        <p className="release-date-card" data-cy="release-date-card-element">
+          Release Date: {releaseDate}
+        </p>
+        <p className="artist-card" data-cy="artist-card-element">
+          Artist: {artist}
+        </p>
+        <p className="genre-card" data-cy="genre-card-element">
+          Genre: {genre}
+        </p>
+      </div>
+
+      <div
+        className={`card-side card-side-back ${!isFlipped ? "hidden" : ""}`}
+        data-cy="card-side-back-element"
+      >
+        <div className="heart-container" data-cy="heart-container-element">
+          {!faveSongs.favoriteSongs.includes(id) && (
+            <img
+              className="heart-icon"
+              data-cy="heart-icon-element"
+              src={heart}
+              alt="add favorite"
+              onClick={() => dispatch(saveSong(id))}
+            />
+          )}
+          {faveSongs.favoriteSongs.includes(id) && (
+            <img
+              className="heart-icon"
+              data-cy="heart-icon-element"
+              src={active}
+              alt="delete favorite"
+              onClick={() => dispatch(deleteSong(id))}
+            />
+          )}
         </div>
-      )}
-      {isFlipped && (
-        <div
-          className="card-side card-side-back"
-          data-cy="card-side-back-element"
+        <LazyLoadImage
+          className="mini-album-cover-back"
+          data-cy="mini-album-cover-back-img"
+          alt="album cover"
+          src={albumCover}
+          effect="opacity"
+        />
+        <p className="song-details-card" data-cy="song-details-card-element">
+          {songDetails}
+        </p>
+        <a
+          className="song-card"
+          data-cy="song-card-song"
+          href="https://open.spotify.com/playlist/4E4reOpjBY0iwYUCtWeM76"
+          rel="noreferrer"
+          target="_blank"
         >
-          <div className="heart-container" data-cy="heart-container-element">
-            {!faveSongs.favoriteSongs.includes(id) && (
-              <img
-                className="heart-icon"
-                data-cy="heart-icon-element"
-                src={heart}
-                alt="add favorite"
-                onClick={() => dispatch(saveSong(id))}
-              />
-            )}
-            {faveSongs.favoriteSongs.includes(id) && (
-              <img
-                className="heart-icon"
-                data-cy="heart-icon-element"
-                src={active}
-                alt="delete favorite"
-                onClick={() => dispatch(deleteSong(id))}
-              />
-            )}
-          </div>
-          <LazyLoadImage
-            className="mini-album-cover-back"
-            data-cy="mini-album-cover-back-img"
-            alt="album cover"
-            src={albumCover}
-            effect="opacity"
-          />
-          <p className="song-details-card" data-cy="song-details-card-element">
-            {songDetails}
-          </p>
-          <a
-            className="song-card"
-            data-cy="song-card-song"
-            href="https://open.spotify.com/playlist/4E4reOpjBY0iwYUCtWeM76"
-            rel="noreferrer"
-            target="_blank"
-          >
-            Song: {songTitle}
-          </a>
-        </div>
-      )}
+          Song: {songTitle}
+        </a>
+      </div>
     </div>
   );
 };
@@ -127,4 +129,5 @@ Card.propTypes = {
   songTitle: PropTypes.string.isRequired,
   genre: PropTypes.string.isRequired,
   className: PropTypes.string,
+  isFlipped: PropTypes.bool,
 };
