@@ -21,10 +21,8 @@ const Playlist = ({ songs }) => {
             genre={song.genre}
             songDetails={song.songDetails}
             key={song.id}
-            className={
-              favSongs.favoriteSongs.includes(song.id) ? "playlist-card" : ""
-            }
-          />
+            isFlipped={true}
+          />,
         );
       }
     });
